@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MiniProject</string>
+    <string name="intro">Welcome to the validation application for height categories according to age for those aged 10 - 29 years</string>
+    <string name="umur">Age</string>
+    <string name="judul_kategori">Height category</string>
+    <string name="judul_tentang">" About Application"</string>
+    <string name="tinggibadan">Height</string>
+    <string name="pria">Man</string>
+    <string name="wanita">Woman</string>
+    <string name="pendek">Short</string>
+    <string name="normal">Normal</string>
+    <string name="tinggi">Tall</string>
+    <string name="badag">Extra Tall</string>
+    <string name="masukkan">Input Data</string>
+    <string name="tentang_aplikasi">About Application</string>
+    <string name="kembali">Back</string>
+    <string name="data_diri">Hello, let me introduce myself, my name is Divee Ananda Damarjati, I am a UI/UX Designer</string>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MiniProject</string>
+    <string name="intro">Selamat Datang di Aplikasi validasi kategori tinggi badan sesuai umur di rentan umur 10 - 29 tahun</string>
+    <string name="umur">Umur</string>
+    <string name="judul_kategori">Kategori tinggi badan</string>
+    <string name="judul_tentang">Tentang Aplikasi</string>
+    <string name="tinggibadan">Tinggi</string>
+    <string name="pria">Pria</string>
+    <string name="wanita">Wanita</string>
+    <string name="pendek">Pendek</string>
+    <string name="normal">Normal</string>
+    <string name="tinggi">Tinggi</string>
+    <string name="badag">badag</string>
+    <string name="masukkan">Masukkan Data</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="kembali">Kembali</string>
+    <string name="data_diri">Halo, Perkenalkan nama saya Divee Ananda Damarjati, saya seorang UI/UX Designer</string>
+</resources>
