@@ -1,5 +1,7 @@
 package org.d3if0106.miniproject.screen
 
+import android.content.Context
+import android.content.Intent
 import android.graphics.drawable.Icon
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
@@ -9,9 +11,11 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material3.Button
@@ -36,6 +40,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.input.ImeAction
@@ -86,10 +91,13 @@ fun ScreenContent(modifier: Modifier){
     )
     var gender by remember { mutableStateOf(radioOptions[0]) }
 
-    var kategori by remember { mutableIntStateOf(0) }
+    var kategori by remember { mutableStateOf(0) }
+
+    var context = LocalContext.current
 
     Column(
         modifier = modifier
+            .verticalScroll(rememberScrollState())
             .fillMaxSize()
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp),
@@ -166,6 +174,16 @@ fun ScreenContent(modifier: Modifier){
                 text = stringResource(kategori).uppercase(),
                 style = MaterialTheme.typography.headlineLarge
             )
+            Button(onClick = {
+                shareData(
+                    context = context,
+                    message = context.getString(R.string.share, context.getString(kategori  ))
+                )
+            }
+            ) {
+                Text(text = stringResource(id = R.string.send))
+            }
+            Text(text = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
         }
     }
 }
@@ -242,6 +260,15 @@ private fun getStatusTinggiBadan(tinggi: Float, isMale: Boolean, umur: Int): Int
     }
 }
 
+private fun shareData(context: Context, message: String){
+    val shareIntent = Intent(Intent.ACTION_SEND).apply {
+        type = "text/plain"
+        putExtra(Intent.EXTRA_TEXT, message)
+    }
+    if (shareIntent.resolveActivity(context.packageManager) != null){
+        context.startActivity(shareIntent)
+    }
+}
 
 
 

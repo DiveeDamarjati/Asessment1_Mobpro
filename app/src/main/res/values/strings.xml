@@ -1,18 +1,20 @@
 <resources>
     <string name="app_name">MiniProject</string>
-    <string name="intro">Selamat Datang di Aplikasi validasi kategori tinggi badan sesuai umur di rentan umur 10 - 29 tahun</string>
-    <string name="umur">Umur</string>
-    <string name="judul_kategori">Kategori tinggi badan</string>
-    <string name="judul_tentang">Tentang Aplikasi</string>
-    <string name="tinggibadan">Tinggi</string>
-    <string name="pria">Pria</string>
-    <string name="wanita">Wanita</string>
-    <string name="pendek">Pendek</string>
+    <string name="intro">Welcome to the application for measuring height, this application is used to see whether our height is ideal and in accordance with health data circulating on social media, this application measures height for those aged 10 to 29 years</string>
+    <string name="umur">Age</string>
+    <string name="judul_kategori">Height category</string>
+    <string name="judul_tentang">" About Application"</string>
+    <string name="tinggibadan">Height</string>
+    <string name="pria">Man</string>
+    <string name="wanita">Woman</string>
+    <string name="pendek">Short</string>
     <string name="normal">Normal</string>
-    <string name="tinggi">Tinggi</string>
-    <string name="badag">badag</string>
-    <string name="masukkan">Masukkan Data</string>
-    <string name="tentang_aplikasi">Tentang Aplikasi</string>
-    <string name="kembali">Kembali</string>
-    <string name="data_diri">Halo, Perkenalkan nama saya Divee Ananda Damarjati, saya seorang UI/UX Designer</string>
+    <string name="tinggi">Tall</string>
+    <string name="badag">Extra Tall</string>
+    <string name="masukkan">Input Data</string>
+    <string name="tentang_aplikasi">About Application</string>
+    <string name="kembali">Back</string>
+    <string name="data_diri">Hello, let me introduce myself, my name is Divee Ananda Damarjati, I am a UI/UX Designer</string>
+    <string name="share">The result of your calculation is that you are %1$s</string>
+    <string name="send">Send</string>
 </resources>

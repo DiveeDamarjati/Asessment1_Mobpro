@@ -1,5 +1,6 @@
 package org.d3if0106.miniproject.screen
 
+import android.media.Image
 import android.provider.ContactsContract.Profile
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -29,7 +30,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import org.d3if0106.miniproject.R
-import org.d3if0106.miniproject.model.Image
 import org.d3if0106.miniproject.navigation.Screen
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -59,11 +59,12 @@ fun AboutUs(navController: NavHostController) {
     ) { paddingValues ->
         Column(
             modifier = Modifier
-                .padding(paddingValues).padding(top = 10.dp),
+                .padding(paddingValues)
+                .padding(top = 10.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
 
         ) {
-            ProfileImage(image = Image(R.drawable.divee))
+            ProfileImage()
             Text(
                 text = stringResource(id = R.string.data_diri),
                 modifier = Modifier.padding(10.dp),
@@ -76,9 +77,9 @@ fun AboutUs(navController: NavHostController) {
 
 
 @Composable
-fun ProfileImage(image: Image) {
+fun ProfileImage() {
     Image(
-        painter = painterResource(id = image.imageResId),
+        painter = painterResource(id = R.drawable.divee),
         contentDescription = null,
         modifier = Modifier
             .size(200.dp)

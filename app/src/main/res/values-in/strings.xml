@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MiniProject</string>
+    <string name="intro">Selamat datang di aplikasi untuk pengukur tinggi badan, aplikasi ini digunakan untuk melihat apakah tinggi kita sudah ideal dan sesuai dengan data kesehatan yang beredar di media sosial, aplikasi ini mengukur tinggi dengan rentan umur 10 hingga 29 tahun</string>
+    <string name="umur">Umur</string>
+    <string name="judul_kategori">Kategori tinggi badan</string>
+    <string name="judul_tentang">Tentang Aplikasi</string>
+    <string name="tinggibadan">"Tinggi "</string>
+    <string name="pria">Pria</string>
+    <string name="wanita">Wanita</string>
+    <string name="pendek">Pendek</string>
+    <string name="normal">Normal</string>
+    <string name="tinggi">Tinggi</string>
+    <string name="badag">badag</string>
+    <string name="masukkan">Masukkan Data</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="kembali">Kembali</string>
+    <string name="data_diri">Halo, Perkenalkan nama saya Divee Ananda Damarjati, saya seorang UI/UX Designer</string>
+    <string name="share">"Hasil dari perhitungan kamu yaitu kamu %1$s "</string>
+    <string name="send">Kirim</string>
+</resources>
